@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cityCell" rowHeight="107" id="KGk-i7-Jjw" customClass="CityTableViewCell" customModule="OUI_weather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="329" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hh0-NC-rxl">
+                        <rect key="frame" x="28" y="15" width="272" height="68"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRUXELLES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEz-EL-i4t">
+                                <rect key="frame" x="14" y="15" width="145" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="SHn-TD-7rs"/>
+                                    <constraint firstAttribute="width" constant="145" id="Tkb-NK-MG1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6.21 - Cloudy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s19-19-NqB">
+                                <rect key="frame" x="15" y="40" width="242" height="13"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17° - 34°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waJ-Bn-lv5">
+                                <rect key="frame" x="162" y="15" width="67" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="xBs-SS-duG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="xhR-wM-rjj">
+                                <rect key="frame" x="233" y="15" width="24" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="I1p-8N-D3Q"/>
+                                    <constraint firstAttribute="width" constant="24" id="Ndc-Hp-nTy"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14887356760000001" green="0.21383187170000001" blue="0.27843981979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="PEz-EL-i4t" firstAttribute="top" secondItem="hh0-NC-rxl" secondAttribute="top" constant="15" id="5Sj-4Q-QJw"/>
+                            <constraint firstItem="waJ-Bn-lv5" firstAttribute="top" secondItem="hh0-NC-rxl" secondAttribute="top" constant="15" id="HY1-Kh-YWg"/>
+                            <constraint firstAttribute="trailing" secondItem="s19-19-NqB" secondAttribute="trailing" constant="15" id="N5v-fW-rlm"/>
+                            <constraint firstItem="s19-19-NqB" firstAttribute="leading" secondItem="hh0-NC-rxl" secondAttribute="leading" constant="15" id="QKe-ft-lGK"/>
+                            <constraint firstAttribute="trailing" secondItem="xhR-wM-rjj" secondAttribute="trailing" constant="15" id="YuQ-jM-2fq"/>
+                            <constraint firstItem="xhR-wM-rjj" firstAttribute="top" secondItem="hh0-NC-rxl" secondAttribute="top" constant="15" id="ddv-Cc-B54"/>
+                            <constraint firstItem="PEz-EL-i4t" firstAttribute="leading" secondItem="hh0-NC-rxl" secondAttribute="leading" constant="14" id="e9F-tl-0Jk"/>
+                            <constraint firstItem="s19-19-NqB" firstAttribute="top" secondItem="PEz-EL-i4t" secondAttribute="bottom" id="jtB-Nz-BZz"/>
+                            <constraint firstAttribute="bottom" secondItem="s19-19-NqB" secondAttribute="bottom" constant="15" id="kFn-oP-ede"/>
+                            <constraint firstItem="xhR-wM-rjj" firstAttribute="leading" secondItem="waJ-Bn-lv5" secondAttribute="trailing" constant="4" id="kRK-eP-hQe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hh0-NC-rxl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="9ap-Oh-vKT"/>
+                    <constraint firstAttribute="trailing" secondItem="hh0-NC-rxl" secondAttribute="trailing" constant="29" id="Hys-ck-oIT"/>
+                    <constraint firstItem="hh0-NC-rxl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="cXu-2D-ne0"/>
+                    <constraint firstAttribute="bottom" secondItem="hh0-NC-rxl" secondAttribute="bottom" constant="16.5" id="ijN-Dk-I74"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bubbleView" destination="hh0-NC-rxl" id="6hk-EE-FHU"/>
+                <outlet property="degreeLabel" destination="waJ-Bn-lv5" id="p3W-c4-0xu"/>
+                <outlet property="iconImageView" destination="xhR-wM-rjj" id="nmL-J9-678"/>
+                <outlet property="infoLabel" destination="PEz-EL-i4t" id="4r8-cj-az1"/>
+            </connections>
+            <point key="canvasLocation" x="60" y="73.763118440779621"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cloud1" width="32" height="32"/>
+    </resources>
+</document>
